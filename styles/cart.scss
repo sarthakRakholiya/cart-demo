@@ -1,0 +1,82 @@
+// styles/Cart.module.scss
+.cart-container {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px $shadow-color;
+}
+
+.cart-title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2em;
+  color: $cuColor33;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  button {
+    padding: 0.25rem 0.5rem;
+    font-size: 1rem;
+  }
+
+  .quantity {
+    margin: 0 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .quantityButton {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: $primary;
+    border-width: 0;
+    @include displayFlex();
+  }
+}
+
+.cart-summary {
+  padding: 20px;
+  border: 1px solid $cuColorDD;
+  border-radius: 10px;
+  background-color: $cuColorF8;
+  .checkout-btn {
+    background-color: $primary;
+    border-width: 0;
+  }
+}
+
+.cart-summary h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.5em;
+  color: $cuColor33;
+}
+
+.summary-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid $cuColorDD;
+  font-size: 1.2em;
+  color: $cuColor33;
+}
+
+.summary-item:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .cart-container {
+    padding: 10px;
+  }
+  .cart-summary {
+    margin-top: 20px;
+  }
+}

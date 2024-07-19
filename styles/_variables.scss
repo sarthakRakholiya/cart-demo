@@ -1,0 +1,16 @@
+$primary: #69306d;
+$bg-primary: #faf6ef;
+$black: #000000;
+$white: #ffffff;
+$shadow-color: rgba(0, 0, 0, 0.1);
+$cuColor33: #333333;
+$cuColorDD: #dddddd;
+$cuColorF8: #f8f9fa;
+$cuColorF2: #f2d7ee;
+$cuColorFC: #fc4100;
+
+@mixin displayFlex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,12 @@
+@import './variables.scss';
+@import './layout.scss';
+@import './mainSection.scss';
+@import './cart.scss';
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  background-color: transparent;
+}
